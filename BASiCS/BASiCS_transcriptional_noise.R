@@ -21,6 +21,7 @@ INPUT_RDS   <- "Roux_SKNSH.rds"     # pre-processed object (see README)
 CHAIN_DIR   <- "chains"
 RESULTS_DIR <- "results"
 N_CELLS     <- 130                  # cells per group: size of the smallest group
+VAR_THRESHOLD <- 0.6                # HVG threshold; 0.3 for snSK-N-SH (DMSO, KDM5-C70, T-5224)
 dir.create(CHAIN_DIR, showWarnings = FALSE)
 dir.create(RESULTS_DIR, showWarnings = FALSE)
 
@@ -87,8 +88,7 @@ for (cmp in COMPARISONS) {
     a <- cmp[1]; b <- cmp[2]; tag <- paste0(a, "_vs_", b)
     de <- BASiCS_TestDE(Chain1 = chains[[a]], Chain2 = chains[[b]],
                         GroupLabel1 = LABELS[[a]], GroupLabel2 = LABELS[[b]],
-                        EpsilonM = log2(2), EpsilonD = log2(1.5), EpsilonR = 0.41,
-                        ProbThresholdM = 0.85, Plot = FALSE)
+                        Plot = FALSE)                      # default parameters
     write.csv(as.data.frame(de, Parameter = "Disp"),
               file.path(RESULTS_DIR, paste0("DiffDisp_", tag, ".csv")), row.names = FALSE)
     ggsave(file.path(RESULTS_DIR, paste0("DiffDisp_volcano_", tag, ".pdf")),
@@ -100,7 +100,7 @@ for (cmp in COMPARISONS) {
 ## 4. Highly variable genes within each group ----------------------------------
 
 for (g in names(chains)) {
-    hvg <- BASiCS_DetectHVG(chains[[g]], VarThreshold = 0.6)
+    hvg <- BASiCS_DetectHVG(chains[[g]], VarThreshold = VAR_THRESHOLD)
     write.csv(as.data.frame(hvg@Table),                      # all genes, HVG TRUE/FALSE
               file.path(RESULTS_DIR, paste0("HVG_all_", g, ".csv")), row.names = FALSE)
     write.csv(as.data.frame(hvg),                            # HVG only

@@ -18,10 +18,9 @@ For background on the method see the BASiCS repository
    with an equal number of cells per group.
 2. **Parameter estimation.** Estimate gene-level mean and over-dispersion with
    `BASiCS_MCMC` (N = 4000, Thin = 10, Burn = 2000, no spike-ins, replicates as batch).
-3. **Differential over-dispersion.** Compare groups with `BASiCS_TestDE`
-   (EpsilonM = log2(2), EpsilonD = log2(1.5), EpsilonR = 0.41, ProbThresholdM = 0.85).
+3. **Differential over-dispersion.** Compare groups with `BASiCS_TestDE` (default parameters).
 4. **Highly variable genes.** Detect highly variable genes within each group with
-   `BASiCS_DetectHVG` (VarThreshold = 0.6).
+   `BASiCS_DetectHVG` (VarThreshold = 0.6; 0.3 for snSK-N-SH treated with DMSO, KDM5-C70 or T-5224).
 
 ## Usage
 

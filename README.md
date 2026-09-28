@@ -3,9 +3,17 @@
 
 Analysis code for the manuscript. Each folder has its own README.
 
+The following analyses use the pipelines published in
+[PCEBrunaLab/Roux-et-al.-2024](https://github.com/PCEBrunaLab/Roux-et-al.-2024):
+
+- scRNA-seq pre-processing: [`Single_Cell_RNA_Sequencing`](https://github.com/PCEBrunaLab/Roux-et-al.-2024/tree/main/Single_Cell_RNA_Sequencing)
+- MuTrans analysis: [`MuTrans_Analysis`](https://github.com/PCEBrunaLab/Roux-et-al.-2024/tree/main/MuTrans_Analysis) (untreated and cisplatin conditions)
+- Cellecta barcode analysis (bulk DNA): [`DNA_Cellecta_Barcodes`](https://github.com/PCEBrunaLab/Roux-et-al.-2024/tree/main/DNA_Cellecta_Barcodes)
+
 | Folder | Content |
 |---|---|
 | `BASiCS/` | Transcriptional noise quantification from scRNA-seq (BASiCS) |
 | `Multiome/` | Single-nucleus multiome (snRNA-seq and snATAC-seq) analysis |
+| `snRNA_clinical/` | snRNA-seq of clinical neuroblastoma samples |
 | `CUTTag/` | CUT&Tag processing and analysis |
 | `CUTRUN/` | CUT&RUN processing and promoter analysis |
