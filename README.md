@@ -12,8 +12,8 @@ The following analyses use the pipelines published in
 
 | Folder | Content |
 |---|---|
-| `BASiCS/` | Transcriptional noise quantification from scRNA-seq (BASiCS) |
+| `BASiCS/` | Transcriptional noise quantification from scRNA-seq (BASiCS) analysis |
 | `Multiome/` | Single-nucleus multiome (snRNA-seq and snATAC-seq) analysis |
 | `snRNA_clinical/` | snRNA-seq of clinical neuroblastoma samples |
 | `CUTTag/` | CUT&Tag processing and analysis |
-| `CUTRUN/` | CUT&RUN processing and promoter analysis |
+| `CUTRUN/` | CUT&RUN processing and analysis |
