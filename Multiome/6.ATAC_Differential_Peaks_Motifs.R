@@ -23,6 +23,12 @@ project$AMT.state <- as.character(nb.seurat$AMT.state[getCellNames(project)])
 project$Condition_AMT <- paste0(project$Sample, "_", project$AMT.state)
 table(project$Condition_AMT)
 
+#Overlay RNA cell state on the ATAC UMAP
+pdf("plots/RNA_cell_state_on_ATAC_UMAP.pdf")
+plotEmbedding(ArchRProj = project, colorBy = "cellColData", name = "AMT.state", embedding = "UMAP_LSI")
+plotEmbedding(ArchRProj = project, colorBy = "cellColData", name = "Sample", embedding = "UMAP_LSI")
+dev.off()
+
 ## Differential peaks: pre vs post treatment ----
 #Positive Log2FC = higher accessibility in POT (useGroups)
 diffPeaks_MES <- getMarkerFeatures(ArchRProj = project,
