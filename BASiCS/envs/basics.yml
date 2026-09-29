@@ -1,0 +1,9 @@
+name: basics
+channels: [conda-forge, bioconda]
+dependencies:
+  - r-base=4.3
+  - bioconductor-basics=2.12.3
+  - bioconductor-singlecellexperiment
+  - r-seurat
+  - r-dplyr
+  - r-ggplot2

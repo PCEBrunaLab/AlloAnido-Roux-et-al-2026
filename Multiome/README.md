@@ -22,3 +22,16 @@ Each script expects the cellranger-arc outputs in `cellranger_outputs/<sample>/`
 
 R with DropletUtils, scuttle, scater, Seurat, glmGamPoi, clusterProfiler, msigdbr,
 Signac, ArchR (v1.0.3), GenomicRanges, chromVARmotifs and MACS.
+
+## Software environment
+
+Conda environments with the tool versions used are in `envs/`. Create one with:
+
+```bash
+mamba env create -f envs/<file>.yml
+```
+
+| File | Used for |
+|---|---|
+| `envs/multiome_R.yml` | All six scripts (ArchR installed from GitHub, see the file header) |
+| `envs/multiome_macs.yml` | MACS3 for peak calling in script 5 |

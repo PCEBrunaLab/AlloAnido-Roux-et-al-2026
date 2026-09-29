@@ -1,0 +1,29 @@
+# Steps 02-06 and 08. Cell Ranger 8.0.0 (step 01) is installed separately from 10x Genomics.
+name: snrna_clinical
+channels: [conda-forge, bioconda]
+dependencies:
+  - r-base
+  - r-seurat=5
+  - r-harmony
+  - r-optparse
+  - r-tidyverse
+  - r-data.table
+  - r-openxlsx
+  - r-readxl
+  - r-ggalluvial
+  - r-corrplot
+  - r-umap
+  - r-irlba
+  - r-viridis
+  - r-circlize
+  - bioconductor-singlecellexperiment
+  - bioconductor-dropletutils
+  - bioconductor-scran
+  - bioconductor-scater
+  - bioconductor-scuttle
+  - bioconductor-batchelor
+  - bioconductor-biomart
+  - bioconductor-scdblfinder
+  - bioconductor-singler
+  - bioconductor-ensdb.hsapiens.v86
+  - bioconductor-complexheatmap

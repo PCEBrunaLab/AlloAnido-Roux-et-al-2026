@@ -1,0 +1,21 @@
+# R analyses: FRiP, peak annotation, differential binding, enrichment
+name: cuttag_R
+channels: [conda-forge, bioconda]
+dependencies:
+  - r-base
+  - r-tidyverse
+  - r-ggpubr
+  - r-patchwork
+  - r-pheatmap
+  - r-venndiagram
+  - r-msigdbr
+  - bioconductor-genomicranges
+  - bioconductor-rsamtools
+  - bioconductor-rtracklayer
+  - bioconductor-chipseeker
+  - bioconductor-txdb.hsapiens.ucsc.hg38.knowngene
+  - bioconductor-org.hs.eg.db
+  - bioconductor-clusterprofiler
+  - bioconductor-reactomepa
+  - bioconductor-enrichplot
+  - bioconductor-complexheatmap

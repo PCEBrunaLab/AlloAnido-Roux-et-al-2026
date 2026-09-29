@@ -1,0 +1,7 @@
+# Peak calling, peak merging, coverage tracks and heatmaps
+name: cuttag_peaks
+channels: [conda-forge, bioconda]
+dependencies:
+  - macs2=2.2.7.1
+  - homer=4.11
+  - deeptools

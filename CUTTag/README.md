@@ -111,3 +111,17 @@ If you use this pipeline, please cite the relevant tools:
 - deepTools: Ramirez et al., Nucleic Acids Research 2016
 - ChIPseeker: Yu et al., Bioinformatics 2015
 - clusterProfiler: Wu et al., The Innovation 2021
+
+## Software environment
+
+Conda environments with the tool versions used are in `envs/`. Create one with:
+
+```bash
+mamba env create -f envs/<file>.yml
+```
+
+| File | Used for |
+|---|---|
+| `envs/cuttag_processing.yml` | Alignment, QC, duplicate removal |
+| `envs/cuttag_peaks.yml` | Peak calling, HOMER, deepTools |
+| `envs/cuttag_R.yml` | R analyses |

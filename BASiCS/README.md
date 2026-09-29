@@ -35,3 +35,15 @@ Chains are written to `chains/`; tables and plots to `results/`.
 ## Software
 
 R (>= 4.2), BASiCS, SingleCellExperiment, Seurat, dplyr, ggplot2.
+
+## Software environment
+
+Conda environments with the tool versions used are in `envs/`. Create one with:
+
+```bash
+mamba env create -f envs/<file>.yml
+```
+
+| File | Used for |
+|---|---|
+| `envs/basics.yml` | `BASiCS_transcriptional_noise.R` |

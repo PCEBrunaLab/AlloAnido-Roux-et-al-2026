@@ -1,0 +1,10 @@
+# Steps 06-10: peak calling, windows, CPM tracks, promoter intervals, AP-1 split
+name: cutrun_analysis
+channels: [conda-forge, bioconda]
+dependencies:
+  - macs3=3.0.4
+  - deeptools=3.5.5
+  - bedtools
+  - samtools
+  - python>=3.9
+  - numpy

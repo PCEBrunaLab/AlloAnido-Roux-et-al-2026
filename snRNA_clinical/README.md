@@ -223,4 +223,15 @@ Place in `references/` directory:
 - `malignant_cluster_markers.csv`
 - `emptyDrops_summary_NB_relaxed_filters.tsv`
 
+## Software environment
 
+Conda environments with the tool versions used are in `envs/`. Create one with:
+
+```bash
+mamba env create -f envs/<file>.yml
+```
+
+| File | Used for |
+|---|---|
+| `envs/snrna_clinical.yml` | Steps 02-06 and 08 |
+| `envs/infercnv.yml` | Step 07 |

@@ -1,0 +1,5 @@
+# MACS3 used by Signac::CallPeaks (script 5); set macs_path to this environment's macs3
+name: multiome_macs
+channels: [conda-forge, bioconda]
+dependencies:
+  - macs3

@@ -1,0 +1,7 @@
+# Step 07: CNV inference
+name: infercnv_env
+channels: [conda-forge, bioconda]
+dependencies:
+  - bioconductor-infercnv
+  - r-seurat=5
+  - r-optparse

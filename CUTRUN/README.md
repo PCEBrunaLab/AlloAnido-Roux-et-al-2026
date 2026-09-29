@@ -90,3 +90,16 @@ Heatmap colour scales are set to the 98th percentile of each panel.
 Cutadapt 4.9, Bowtie2 2.4.2, Picard 2.23.8, SAMtools 1.11, MACS3 3.0.4, bedtools 2.29.2,
 deepTools 3.5.5, Python 3 with numpy. Scripts are written for SLURM; `#SBATCH` resources may need
 adjusting for other clusters.
+
+## Software environment
+
+Conda environments with the tool versions used are in `envs/`. Create one with:
+
+```bash
+mamba env create -f envs/<file>.yml
+```
+
+| File | Used for |
+|---|---|
+| `envs/cutrun_processing.yml` | Steps 01-05 |
+| `envs/cutrun_analysis.yml` | Steps 06-10 |
