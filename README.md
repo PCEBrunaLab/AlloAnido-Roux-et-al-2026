@@ -10,6 +10,9 @@ The following analyses use the pipelines published in
 - MuTrans analysis: [`MuTrans_Analysis`](https://github.com/PCEBrunaLab/Roux-et-al.-2024/tree/main/MuTrans_Analysis) (untreated and cisplatin conditions)
 - Cellecta barcode analysis (bulk DNA): [`DNA_Cellecta_Barcodes`](https://github.com/PCEBrunaLab/Roux-et-al.-2024/tree/main/DNA_Cellecta_Barcodes)
 
+Pre-processing of the PDX bulk RNA-seq data used the pipeline available at
+[Zenodo record 13744441](https://zenodo.org/records/13744441).
+
 | Folder | Content |
 |---|---|
 | `BASiCS/` | Transcriptional noise quantification from scRNA-seq (BASiCS) analysis |
