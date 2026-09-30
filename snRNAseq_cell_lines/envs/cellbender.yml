@@ -1,0 +1,8 @@
+# Script 2b
+name: cellbender
+channels: [conda-forge]
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - cellbender==0.4.0

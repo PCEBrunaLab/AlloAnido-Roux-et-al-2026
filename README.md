@@ -19,5 +19,6 @@ Pre-processing of the PDX bulk RNA-seq data used the Institut Curie RNA-seq pipe
 | `BASiCS/` | Transcriptional noise quantification from scRNA-seq (BASiCS) analysis |
 | `Multiome/` | Single-nucleus multiome (snRNA-seq and snATAC-seq) analysis |
 | `snRNA_clinical/` | snRNA-seq of clinical neuroblastoma samples |
+| `snRNAseq_cell_lines/` | snRNA-seq of SK-N-SH and HuH6 treated with DMSO, KDM5-C70 or T-5224 |
 | `CUTTag/` | CUT&Tag processing and analysis |
 | `CUTRUN/` | CUT&RUN processing and analysis |

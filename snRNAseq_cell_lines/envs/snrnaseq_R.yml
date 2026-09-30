@@ -1,0 +1,19 @@
+# Scripts 2a and 3-6. Cell Ranger 8.0.0 (script 1) is installed separately from 10x Genomics.
+name: snrnaseq_R
+channels: [conda-forge, bioconda]
+dependencies:
+  - r-base
+  - r-seurat=5
+  - r-sctransform
+  - r-readxl
+  - r-dplyr
+  - r-ggplot2
+  - bioconductor-singlecellexperiment
+  - bioconductor-dropletutils
+  - bioconductor-scdblfinder
+  - bioconductor-scran
+  - bioconductor-batchelor
+  - bioconductor-scater
+  - bioconductor-glmgampoi
+  - bioconductor-biomart
+  - bioconductor-ensdb.hsapiens.v86
