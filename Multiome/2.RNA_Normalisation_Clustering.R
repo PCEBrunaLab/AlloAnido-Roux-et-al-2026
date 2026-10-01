@@ -29,7 +29,7 @@ nb.filt.seurat <- SCTransform(nb.filt.seurat, method = "glmGamPoi",
 nb.filt.seurat <- RunPCA(nb.filt.seurat, npcs = 100, features = VariableFeatures(nb.filt.seurat), verbose = FALSE)
 nb.filt.seurat <- RunUMAP(nb.filt.seurat, dims = 1:30)
 nb.filt.seurat <- FindNeighbors(nb.filt.seurat, dims = 1:30)
-nb.filt.seurat <- FindClusters(nb.filt.seurat, resolution = 0.2)
+nb.filt.seurat <- FindClusters(nb.filt.seurat, resolution = 0.4)
 
 DimPlot(nb.filt.seurat, group.by = "seurat_clusters", label = TRUE)
 ggsave("plots/rna_umap_clusters.pdf", width = 7, height = 7)
